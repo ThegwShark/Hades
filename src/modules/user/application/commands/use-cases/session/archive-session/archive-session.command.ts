@@ -1,9 +1,9 @@
 import { ICommand } from '@nestjs/cqrs';
 
-export class DestroySessionCommand implements ICommand {
+export class ArchiveSessionCommand implements ICommand {
   public readonly uuid: string;
 
-  constructor(root: DestroySessionCommand) {
+  constructor(root: ArchiveSessionCommand) {
     this.uuid = root.uuid;
   }
 }
